@@ -1,4 +1,4 @@
-rm(list=ls(all=TRUE));library(RSelenium)
+library(RSelenium)
 cat(crayon::green$bold$italic$underline("Start browser", Sys.time()),fill=T)
 rD <- rsDriver(browser = c("chrome"),chromever = "78.0.3904.105") #install java, then download latest version of ChromeDriver and place in R source file
 remDr <- rD[["client"]]
